@@ -337,5 +337,13 @@
     <ClCompile Include="source\Main.cpp">
       <Filter>important</Filter>
     </ClCompile>
+    <ClCompile Include="source\stdafx.cpp">
+      <Filter>important</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\stdafx.h">
+      <Filter>important</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
