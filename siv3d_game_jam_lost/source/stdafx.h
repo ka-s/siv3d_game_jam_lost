@@ -15,5 +15,6 @@
 // シーンファイル
 #include "Scene.h"
 #include "Title.h"
+#include "MainStage.h"
 #include "Result.h"
 #include "Game.h"

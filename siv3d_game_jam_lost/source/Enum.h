@@ -8,6 +8,6 @@
 enum eScene
 {
     TITLE,
-    GAME,
+    MAINSTAGE,
     RESULT,
 };

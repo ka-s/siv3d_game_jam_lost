@@ -45,8 +45,8 @@ void Game::scene_changer()
         case TITLE:
             scene = make_shared<Title>();
             break;
-        case GAME:
-            //scene = make_shared<Play>();
+        case MAINSTAGE:
+            scene = make_shared<MainStage>();
             break;
         case RESULT:
             scene = make_shared<Result>();

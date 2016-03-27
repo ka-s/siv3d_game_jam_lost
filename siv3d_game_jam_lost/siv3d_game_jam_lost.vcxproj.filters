@@ -355,6 +355,9 @@
     <ClCompile Include="source\Result.cpp">
       <Filter>Scene</Filter>
     </ClCompile>
+    <ClCompile Include="source\MainStage.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\stdafx.h">
@@ -376,6 +379,9 @@
       <Filter>Scene</Filter>
     </ClInclude>
     <ClInclude Include="source\Result.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MainStage.h">
       <Filter>Scene</Filter>
     </ClInclude>
   </ItemGroup>

@@ -22,7 +22,7 @@ void Title::update(eScene* _next_scene)
 {
     // クリックでメインゲーム画面へ
     if (Input::MouseL.clicked)
-        *_next_scene = GAME;
+        *_next_scene = MAINSTAGE;
 }
 
 // 描画
