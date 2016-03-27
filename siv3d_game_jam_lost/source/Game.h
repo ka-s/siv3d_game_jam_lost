@@ -10,7 +10,7 @@ class Game
 {
 private:
     // ゲームシーンインスタンス
-    //std::shared_ptr<Scene> scene;
+    std::shared_ptr<Scene> scene;
 
     // 現在のシーン
     eScene now_scene;
