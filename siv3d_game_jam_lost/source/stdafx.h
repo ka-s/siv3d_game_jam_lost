@@ -14,4 +14,5 @@
 
 // シーンファイル
 #include "Scene.h"
+#include "Title.h"
 #include "Game.h"
