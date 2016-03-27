@@ -40,18 +40,18 @@ void Game::scene_changer()
     // シーン切り替え
     if (now_scene != next_scene)
     {
-        //switch (next_scene)
-        //{
-        //case TITLE:
-        //    scene = make_shared<Title>();
-        //    break;
-        //case GAME:
-        //    scene = make_shared<Play>();
-        //    break;
-        //case RESULT:
-        //    scene = make_shared<Result>();
-        //    break;
-        //}
+        switch (next_scene)
+        {
+        case TITLE:
+            scene = make_shared<Title>();
+            break;
+        case GAME:
+            //scene = make_shared<Play>();
+            break;
+        case RESULT:
+            scene = make_shared<Result>();
+            break;
+        }
         // シーン番号更新
         now_scene = next_scene;
     }

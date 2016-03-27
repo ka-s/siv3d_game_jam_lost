@@ -189,6 +189,7 @@
   <ItemGroup>
     <ClCompile Include="source\Game.cpp" />
     <ClCompile Include="source\Main.cpp" />
+    <ClCompile Include="source\Result.cpp" />
     <ClCompile Include="source\Scene.cpp" />
     <ClCompile Include="source\stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -200,6 +201,7 @@
     <ClInclude Include="source\Const.h" />
     <ClInclude Include="source\Enum.h" />
     <ClInclude Include="source\Game.h" />
+    <ClInclude Include="source\Result.h" />
     <ClInclude Include="source\Scene.h" />
     <ClInclude Include="source\stdafx.h" />
     <ClInclude Include="source\Title.h" />
