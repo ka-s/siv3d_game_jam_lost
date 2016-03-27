@@ -345,5 +345,8 @@
     <ClInclude Include="source\stdafx.h">
       <Filter>important</Filter>
     </ClInclude>
+    <ClInclude Include="source\Const.h">
+      <Filter>important</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
