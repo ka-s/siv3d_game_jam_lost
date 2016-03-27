@@ -8,3 +8,4 @@
 #include <memory>
 
 #include "Const.h"
+#include "Enum.h"
