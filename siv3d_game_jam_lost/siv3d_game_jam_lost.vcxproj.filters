@@ -53,6 +53,9 @@
     <Filter Include="important">
       <UniqueIdentifier>{9e86c048-1a45-466a-a74a-b020d4414843}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{cbf93753-b59f-4044-be19-02234860ab3d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Example\Well\Well.jpg">
@@ -340,6 +343,9 @@
     <ClCompile Include="source\stdafx.cpp">
       <Filter>important</Filter>
     </ClCompile>
+    <ClCompile Include="source\Game.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\stdafx.h">
@@ -347,6 +353,12 @@
     </ClInclude>
     <ClInclude Include="source\Const.h">
       <Filter>important</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Enum.h">
+      <Filter>important</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game.h">
+      <Filter>Scene</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -14,11 +14,11 @@ void Main()
     Window::Resize(MAX_X, MAX_Y);
 
     // ゲームインスタンス作成
-    //auto game = make_shared<Game>();
+    auto game = make_shared<Game>();
 
     while (System::Update())
     {
         // ゲームを走らせる
-        //game->run();
+        game->run();
     }
 }
