@@ -1,4 +1,4 @@
-# たいとるみてい
+# 牛を今、失う
 
 第4回Siv3D Game Jam
 テーマ「失う」
@@ -17,4 +17,15 @@ Create by かーず
 
 # 解説
 
-[](せつめいぶん)
+## 継承関係
+
+Scene
+├ Title
+├ MainStage
+└ Result
+
+Character
+├ Player
+│ └ Cow
+└ Enemy
+     └ Car

@@ -50,11 +50,14 @@
     <Filter Include="リソース ファイル\Engine\dll%28x64%29\TobiiEyeX">
       <UniqueIdentifier>{9a53d0f1-1b2a-455a-83c6-03b46311e942}</UniqueIdentifier>
     </Filter>
-    <Filter Include="important">
-      <UniqueIdentifier>{9e86c048-1a45-466a-a74a-b020d4414843}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Scene">
       <UniqueIdentifier>{cbf93753-b59f-4044-be19-02234860ab3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Character">
+      <UniqueIdentifier>{7021f886-0e03-4900-89f7-e328c45cafc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Important">
+      <UniqueIdentifier>{9e86c048-1a45-466a-a74a-b020d4414843}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -338,10 +341,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\Main.cpp">
-      <Filter>important</Filter>
+      <Filter>Important</Filter>
     </ClCompile>
     <ClCompile Include="source\stdafx.cpp">
-      <Filter>important</Filter>
+      <Filter>Important</Filter>
     </ClCompile>
     <ClCompile Include="source\Game.cpp">
       <Filter>Scene</Filter>
@@ -358,16 +361,31 @@
     <ClCompile Include="source\MainStage.cpp">
       <Filter>Scene</Filter>
     </ClCompile>
+    <ClCompile Include="source\Character.cpp">
+      <Filter>Character</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Player.cpp">
+      <Filter>Character</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Enemy.cpp">
+      <Filter>Character</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Cow.cpp">
+      <Filter>Character</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Car.cpp">
+      <Filter>Character</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\stdafx.h">
-      <Filter>important</Filter>
+      <Filter>Important</Filter>
     </ClInclude>
     <ClInclude Include="source\Const.h">
-      <Filter>important</Filter>
+      <Filter>Important</Filter>
     </ClInclude>
     <ClInclude Include="source\Enum.h">
-      <Filter>important</Filter>
+      <Filter>Important</Filter>
     </ClInclude>
     <ClInclude Include="source\Game.h">
       <Filter>Scene</Filter>
@@ -383,6 +401,21 @@
     </ClInclude>
     <ClInclude Include="source\MainStage.h">
       <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Character.h">
+      <Filter>Character</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Player.h">
+      <Filter>Character</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Enemy.h">
+      <Filter>Character</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Cow.h">
+      <Filter>Character</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Car.h">
+      <Filter>Character</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

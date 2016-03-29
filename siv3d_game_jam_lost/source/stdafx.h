@@ -12,6 +12,13 @@
 #include "Const.h"
 #include "Enum.h"
 
+// キャラクターファイル
+#include "Character.h"
+#include "Player.h"
+#include "Enemy.h"
+#include "Cow.h"
+#include "Car.h"
+
 // シーンファイル
 #include "Scene.h"
 #include "Title.h"

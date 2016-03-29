@@ -187,9 +187,14 @@
     <Font Include="Example\YomogiFont.ttf" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="source\Car.cpp" />
+    <ClCompile Include="source\Character.cpp" />
+    <ClCompile Include="source\Cow.cpp" />
+    <ClCompile Include="source\Enemy.cpp" />
     <ClCompile Include="source\Game.cpp" />
     <ClCompile Include="source\Main.cpp" />
     <ClCompile Include="source\MainStage.cpp" />
+    <ClCompile Include="source\Player.cpp" />
     <ClCompile Include="source\Result.cpp" />
     <ClCompile Include="source\Scene.cpp" />
     <ClCompile Include="source\stdafx.cpp">
@@ -199,10 +204,15 @@
     <ClCompile Include="source\Title.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="source\Car.h" />
+    <ClInclude Include="source\Character.h" />
     <ClInclude Include="source\Const.h" />
+    <ClInclude Include="source\Cow.h" />
+    <ClInclude Include="source\Enemy.h" />
     <ClInclude Include="source\Enum.h" />
     <ClInclude Include="source\Game.h" />
     <ClInclude Include="source\MainStage.h" />
+    <ClInclude Include="source\Player.h" />
     <ClInclude Include="source\Result.h" />
     <ClInclude Include="source\Scene.h" />
     <ClInclude Include="source\stdafx.h" />
