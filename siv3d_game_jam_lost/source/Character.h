@@ -18,9 +18,9 @@ private:
 public:
     Character();
     // 2Dテクスチャによる作成
-    Character(Texture* _texture);
+    Character(Vec3 _location, Texture* _texture);
     // 3Dモデルによる作成
-    Character(Mesh* _mesh);
+    Character(Vec3 _location, Mesh* _mesh);
     ~Character();
 
     // 更新

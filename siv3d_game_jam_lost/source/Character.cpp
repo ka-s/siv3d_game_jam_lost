@@ -11,19 +11,19 @@ Character::Character()
 }
 
 // 2Dテクスチャによる作成
-Character::Character(Texture* _texture)
+Character::Character(Vec3 _location, Texture* _texture)
 {
     // 座標
-    location = Vec3();
+    location = _location;
     // テクスチャ
     texture = *_texture;
 }
 
 // 3Dモデルによる作成
-Character::Character(Mesh* _mesh)
+Character::Character(Vec3 _location, Mesh* _mesh)
 {
     // 座標
-    location = Vec3();
+    location = _location;
     // 3Dメッシュ
     mesh = *_mesh;
 }

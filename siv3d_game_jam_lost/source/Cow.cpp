@@ -9,6 +9,18 @@ Cow::Cow()
 
 }
 
+// 2Dテクスチャによる作成
+Cow::Cow(Vec3 _location, Texture* _texture)
+{
+
+}
+
+// 3Dモデルによる作成
+Cow::Cow(Vec3 _location, Mesh* _mesh)
+{
+
+}
+
 Cow::~Cow()
 {
 
