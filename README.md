@@ -19,13 +19,13 @@ Create by Ç©Å[Ç∏
 
 ## åpè≥ä÷åW
 
-Scene
-Ñ• Title
-Ñ• MainStage
-Ñ§ Result
-
-Character
-Ñ• Player
-Ñ† Ñ§ Cow
-Ñ§ Enemy
-     Ñ§ Car
+	Scene
+	Ñ• Title
+	Ñ• MainStage
+	Ñ§ Result
+	
+	Character
+	Ñ• Player
+	Ñ† Ñ§ Cow
+	Ñ§ Enemy
+	     Ñ§ Car
