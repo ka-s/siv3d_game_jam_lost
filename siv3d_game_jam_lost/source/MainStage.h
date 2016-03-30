@@ -4,7 +4,7 @@
 
 #pragma once
 
-// リザルトシーンクラス
+// メインシーンクラス
 class MainStage : public Scene
 {
 private:
