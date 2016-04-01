@@ -12,13 +12,9 @@ private:
 public:
     Enemy();
     // 2Dテクスチャによる作成
-    Enemy(Vec3 _location, Texture* _texture);
-    // 3Dモデルによる作成
-    Enemy(Vec3 _location, Mesh* _mesh);
+    Enemy(Vec3 _location, Texture* _texture, float _size);
     ~Enemy();
 
     // 更新
-    void update();
-    // 描画
-    void draw();
+    void update() override;
 };

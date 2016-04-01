@@ -18,6 +18,11 @@ private:
     // キャラクターコンテナ
     std::vector<std::shared_ptr<Character>> character;
 
+    // 地面メッシュ
+    Plane ground;
+    // 背景メッシュ
+    Plane background;
+
 public:
     MainStage();
     ~MainStage();

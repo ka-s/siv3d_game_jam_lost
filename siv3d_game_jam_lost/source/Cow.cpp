@@ -10,13 +10,7 @@ Cow::Cow()
 }
 
 // 2Dテクスチャによる作成
-Cow::Cow(Vec3 _location, Texture* _texture)
-{
-
-}
-
-// 3Dモデルによる作成
-Cow::Cow(Vec3 _location, Mesh* _mesh)
+Cow::Cow(Vec3 _location, Texture* _texture, float _size) : Player(_location, _texture, _size)
 {
 
 }
@@ -28,12 +22,6 @@ Cow::~Cow()
 
 // 更新
 void Cow::update()
-{
-
-}
-
-// 描画
-void Cow::draw()
 {
 
 }
