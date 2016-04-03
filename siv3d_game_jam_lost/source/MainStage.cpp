@@ -40,9 +40,15 @@ void MainStage::update(eScene* _next_scene)
 #ifdef _DEBUG
 
     // フリーカメラ
-    Graphics3D::FreeCamera();
+    //Graphics3D::FreeCamera();
 
-#endif // _DEBUG
+#endif
+
+    // キャラクター更新
+    for (auto index : character)
+    {
+        index->update();
+    }
 }
 
 // 描画
@@ -55,7 +61,7 @@ void MainStage::draw()
     }
 
     // 地面メッシュ描画
-    ground.draw();
+    ground.draw(Palette::Green);
     // 背景メッシュ描画
     ground.asMesh()
         .rotated(Radians(-90.f), 0.f, 0.f)

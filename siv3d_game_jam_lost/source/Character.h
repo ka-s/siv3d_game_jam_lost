@@ -16,6 +16,8 @@ protected:
     Plane mesh;
     // サイズ
     float size;
+    // 移動速度
+    float speed;
 
 public:
     Character();

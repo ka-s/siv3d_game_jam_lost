@@ -23,15 +23,11 @@ Character::Character(Vec3 _location, Texture* _texture, float _size)
     size = _size;
     // 板ポリゴン
     mesh = Plane(Vec3(), size);
+    // 移動速度
+    speed = 1.f;
 }
 
 Character::~Character()
-{
-
-}
-
-// 更新
-void Character::update()
 {
 
 }
