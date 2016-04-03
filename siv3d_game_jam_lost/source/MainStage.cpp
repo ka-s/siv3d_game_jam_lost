@@ -49,13 +49,6 @@ MainStage::~MainStage()
 // 更新
 void MainStage::update(eScene* _next_scene)
 {
-#ifdef _DEBUG
-
-    // フリーカメラ
-    //Graphics3D::FreeCamera();
-
-#endif
-
     // カメラの移動
     camera.pos.x += camera_scroll_speed;
     camera.lookat.x += camera_scroll_speed;
@@ -65,6 +58,12 @@ void MainStage::update(eScene* _next_scene)
     {
         back_scroll_index++;
         scroll_time += 32.f;
+    }
+
+    // 障害物スポーン
+    if (System::FrameCount() % 60 == 1)
+    {
+        obstacles.push_back(Box(Vec3(camera.pos.x + 32.f, 0.5f, Random(-16.f, 16.f)), 1));
     }
 
     // キャラクター更新
@@ -79,6 +78,12 @@ void MainStage::draw()
 {
     // カメラ描画
     Graphics3D::SetCamera(camera);
+
+    // 障害物描画
+    for (auto index : obstacles)
+    {
+        index.draw();
+    }
 
     // キャラクター描画
     for (auto index : character)

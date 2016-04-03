@@ -23,6 +23,9 @@ private:
     // カメラスクロール速度
     float camera_scroll_speed;
 
+    // 障害物
+    std::vector<Box> obstacles;
+
     // 地面メッシュ
     Plane ground;
     Plane ground2;
