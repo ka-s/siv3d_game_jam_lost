@@ -23,5 +23,6 @@ Enemy::~Enemy()
 // 更新
 void Enemy::update()
 {
-
+    // スクロール
+    location.x += SCROLL_SPEED;
 }

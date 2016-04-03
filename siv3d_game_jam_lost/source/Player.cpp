@@ -24,6 +24,9 @@ Player::~Player()
 // 更新
 void Player::update()
 {
+    // スクロール
+    location.x += SCROLL_SPEED;
+
     // 上矢印キー
     if (Input::KeyUp.pressed)
     {

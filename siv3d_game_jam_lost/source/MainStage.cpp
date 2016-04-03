@@ -27,7 +27,7 @@ MainStage::MainStage()
     camera.lookat = Vec3(0.f, 0.f, 16.f);
     camera.pos = Vec3(0.f, 4.f, -16.f);
     // カメラスクロール速度
-    camera_scroll_speed = 0.2f;
+    camera_scroll_speed = SCROLL_SPEED;
 
     // 地面メッシュ
     ground = Plane(Vec3(), 32.f);

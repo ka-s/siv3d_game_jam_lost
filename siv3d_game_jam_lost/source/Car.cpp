@@ -19,9 +19,3 @@ Car::~Car()
 {
 
 }
-
-// XV
-void Car::update()
-{
-
-}
