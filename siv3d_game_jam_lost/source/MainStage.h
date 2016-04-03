@@ -18,10 +18,21 @@ private:
     // キャラクターコンテナ
     std::vector<std::shared_ptr<Character>> character;
 
+    // カメラ
+    Camera camera;
+    // カメラスクロール速度
+    float camera_scroll_speed;
+
     // 地面メッシュ
     Plane ground;
+    Plane ground2;
     // 背景メッシュ
     Plane background;
+    Plane background2;
+    // 背景スクロールインデックス
+    float back_scroll_index;
+    // 背景スクロールタイミング
+    float scroll_time;
 
 public:
     MainStage();

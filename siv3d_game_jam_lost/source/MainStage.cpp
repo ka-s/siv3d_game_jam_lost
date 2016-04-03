@@ -23,10 +23,22 @@ MainStage::MainStage()
     // 車インスタンス作成
     character.push_back(make_shared<Car>(Vec3(-8.f, 1.f, 0.f), &t_car, 2.f));
 
+    // カメラ
+    camera.lookat = Vec3(0.f, 0.f, 16.f);
+    camera.pos = Vec3(0.f, 4.f, -16.f);
+    // カメラスクロール速度
+    camera_scroll_speed = 0.2f;
+
     // 地面メッシュ
     ground = Plane(Vec3(), 32.f);
+    ground2 = Plane(Vec3(), 32.f);
     // 背景メッシュ
     background = Plane(Vec3(), 32.f);
+    background2 = Plane(Vec3(), 32.f);
+    // 背景スクロールインデックス
+    back_scroll_index = 0.f;
+    // 背景スクロールタイミング
+    scroll_time = 32.f;
 }
 
 MainStage::~MainStage()
@@ -44,6 +56,17 @@ void MainStage::update(eScene* _next_scene)
 
 #endif
 
+    // カメラの移動
+    camera.pos.x += camera_scroll_speed;
+    camera.lookat.x += camera_scroll_speed;
+
+    // 背景スクロール処理
+    if (camera.pos.x > scroll_time)
+    {
+        back_scroll_index++;
+        scroll_time += 32.f;
+    }
+
     // キャラクター更新
     for (auto index : character)
     {
@@ -54,6 +77,9 @@ void MainStage::update(eScene* _next_scene)
 // 描画
 void MainStage::draw()
 {
+    // カメラ描画
+    Graphics3D::SetCamera(camera);
+
     // キャラクター描画
     for (auto index : character)
     {
@@ -61,10 +87,19 @@ void MainStage::draw()
     }
 
     // 地面メッシュ描画
-    ground.draw(Palette::Green);
+    ground.asMesh()
+        .translated(Vec3(32.f * back_scroll_index, 0.f, 0.f))
+        .draw(Palette::Green);
+    ground2.asMesh()
+        .translated(Vec3(32.f * (back_scroll_index + 1.f), 0.f, 0.f))
+        .draw(Palette::Green);
     // 背景メッシュ描画
     ground.asMesh()
         .rotated(Radians(-90.f), 0.f, 0.f)
-        .translated(Vec3(0.f, 16.f, 16.f))
+        .translated(Vec3(32.f * back_scroll_index, 16.f, 16.f))
+        .draw(t_background);
+    ground2.asMesh()
+        .rotated(Radians(-90.f), 0.f, 0.f)
+        .translated(Vec3(32.f * (back_scroll_index + 1.f), 16.f, 16.f))
         .draw(t_background);
 }
