@@ -37,4 +37,6 @@ void Player::update()
     {
         location.z -= speed;
     }
+
+    collision_box = Box(location, size);
 }

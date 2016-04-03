@@ -25,6 +25,8 @@ private:
 
     // 障害物
     std::vector<Box> obstacles;
+    // スポーンレート
+    int spawn_late;
 
     // 地面メッシュ
     Plane ground;

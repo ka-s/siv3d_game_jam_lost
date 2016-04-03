@@ -18,6 +18,8 @@ protected:
     float size;
     // ˆÚ“®‘¬“x
     float speed;
+    // “–‚½‚è”»’è”ÍˆÍ
+    Box collision_box;
 
 public:
     Character();
@@ -29,4 +31,7 @@ public:
     virtual void update() = 0;
     // •`‰æ
     void draw();
+
+    // “–‚½‚è”»’èŽæ“¾
+    Box get_collision();
 };

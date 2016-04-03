@@ -29,6 +29,9 @@ MainStage::MainStage()
     // カメラスクロール速度
     camera_scroll_speed = SCROLL_SPEED;
 
+    // スポーンレート
+    spawn_late = 60;
+
     // 地面メッシュ
     ground = Plane(Vec3(), 32.f);
     ground2 = Plane(Vec3(), 32.f);
@@ -61,15 +64,30 @@ void MainStage::update(eScene* _next_scene)
     }
 
     // 障害物スポーン
-    if (System::FrameCount() % 60 == 1)
+    if (System::FrameCount() % spawn_late == 1)
     {
-        obstacles.push_back(Box(Vec3(camera.pos.x + 32.f, 0.5f, Random(-16.f, 16.f)), 1));
+        obstacles.push_back(Box(Vec3(camera.pos.x + 32.f, 0.5f, Random(-16.f, 16.f)), Random(1.f, 3.f)));
+        
+        spawn_late--;
+        if (spawn_late < 1)
+        {
+            spawn_late = 1;
+        }
     }
 
     // キャラクター更新
     for (auto index : character)
     {
         index->update();
+    }
+
+    // 当たり判定
+    for (auto index : obstacles)
+    {
+        if (character.at(0)->get_collision().intersects(index))
+        {
+            *_next_scene = RESULT;
+        }
     }
 }
 
